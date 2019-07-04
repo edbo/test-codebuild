@@ -1,0 +1,11 @@
+version: 0.2
+
+env:
+  variables:
+    TEST: "I'm a test"
+
+phases:
+  sync:
+    commands:
+      - env
+      - aws sts get-caller-identity
